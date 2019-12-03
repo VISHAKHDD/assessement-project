@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:6.5em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:60px;
+  //bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+
+
+
+
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+iframe {
+	border: none;
+}
+
+.main-container {
+/*	min-height: 100vh;
+	background: linear-gradient(75deg, rgba(119, 205, 155, 0), rgba(69, 24, 115, 0.53)),url(https://wallpapercave.com/wp/wp4614442.jpg);
+	background-repeat: no-repeat;
+     position: absolute;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	flex-direction: column;
+	justify-content: center;*/
+background-attachment:inherit;
+background: url('index.jpg');
+
+/*	background: url('http://wallsdesk.com/wp-content/uploads/2016/08/Black-Abstract-HD-Wallpaper.jpg');*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+          background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+* {
+	 box-sizing: border-box;
+}
+
+ header.header {
+	 position: absolute;
+	 top: 30%;
+	 left: 0;
+	 width: 100%;
+	 transform: translateY(-50%);
+}
+ header.header h1 {
+	 font-size: 8rem;
+	 color: white;
+	 text-align: center;
+	 margin-top: 0;
+	 text-transform: uppercase;
+	 font-weight: 900;
+}
+ .glitch-window {
+	 position: absolute;
+	 top: 0;
+	 left: -2px;
+	 width: 100%;
+	 color: yellow;
+	 text-shadow: 2px 0 #f9f8f8, -1px 0 yellow, -2px 0 green;
+	 overflow: hidden;
+	 animation: crt-me 2500ms infinite linear alternate-reverse;
+}
+ @keyframes crt-me {
+	 0% {
+		 clip: rect(31px, 9999px, 94px, 0);
+	}
+	 10% {
+		 clip: rect(112px, 9999px, 76px, 0);
+	}
+	 20% {
+		 clip: rect(85px, 9999px, 77px, 0);
+	}
+	 30% {
+		 clip: rect(27px, 9999px, 97px, 0);
+	}
+	 40% {
+		 clip: rect(64px, 9999px, 98px, 0);
+	}
+	 50% {
+		 clip: rect(61px, 9999px, 85px, 0);
+	}
+	 60% {
+		 clip: rect(99px, 9999px, 114px, 0);
+	}
+	 70% {
+		 clip: rect(34px, 9999px, 115px, 0);
+	}
+	 80% {
+		 clip: rect(98px, 9999px, 129px, 0);
+	}
+	 90% {
+		 clip: rect(43px, 9999px, 96px, 0);
+	}
+	 100% {
+		 clip: rect(82px, 9999px, 64px, 0);
+	}
+}
+ .inspiration-button {
+	 font-family: Helvetica, sans-serif;
+	 position: fixed;
+	 display: inline-block;
+	 z-index: 100;
+	 bottom: 1rem;
+	 left: 50%;
+	 transform: translate(-50%, 0%);
+	 color: white;
+	 text-decoration: none;
+	 padding: 0.75rem 1rem;
+	 border-radius: 80px;
+	 background: linear-gradient(270deg, #1e80dc, #c61590);
+	 transition: transform 250ms ease;
+}
+ .inspiration-button:hover, .inspiration-button:focus, .inspiration-button:active {
+	 transform: translate(-50%, -10%);
+}
+  a {
+     text-decoration: none;
+    }
+    a:link {
+     text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+     text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+     text-decoration: none;
+     color: wheat;
+}
+
+/* selected link */
+a:active {
+     text-decoration: none;
+}
+
+.a{color: #E7484F}
+.b{color: #F68B1D}
+.c{color: #FCED00}
+.d{color: #009E4F}
+.e{color: #00AAC3}
+.f{color:  #732982}
+
+
+.container{
+  margin-top: 150px;
+}
+
+.text-center {
+  text-align: center;
+}
+.rainbow {
+    margin-left: 40px;
+    background-color: #343A40;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px 100px;
+    padding-bottom: 30px;
+    position: relative;
+    font-size: 2.3em;
+    padding-top: 30px;
+    top: -80px;
+}
+
+.rainbow-1:hover{
+   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slidebg 5s linear infinite;
+}
+
+.rainbow-2:hover{
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  animation:slidebg 2s linear infinite;
+}
+
+.rainbow-3:hover{
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+  animation:slidebg 2s linear infinite;
+}
+
+.rainbow-4:hover{
+   background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #F68B1D, 
+      #FCED00,
+      #009E4F,
+      #00AAC3,
+      #732982
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+
+.rainbow-5:hover{
+   background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #E7484F 16.65%,
+      #F68B1D 16.65%,
+      #F68B1D 33.3%,
+      #FCED00 33.3%,
+      #FCED00 49.95%,
+      #009E4F 49.95%,
+      #009E4F 66.6%,
+      #00AAC3 66.6%,
+      #00AAC3 83.25%,
+      #732982 83.25%,
+      #732982 100%,
+      #E7484F 100%
+     
+     
+     
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}

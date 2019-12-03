@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:6.5em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:60px;
+  //bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+
+
+
+
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+iframe {
+	border: none;
+}
+
+.main-container {
+/*	min-height: 100vh;
+	background: linear-gradient(75deg, rgba(119, 205, 155, 0), rgba(69, 24, 115, 0.53)),url(https://wallpapercave.com/wp/wp4614442.jpg);
+	background-repeat: no-repeat;
+     position: absolute;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	flex-direction: column;
+	justify-content: center;*/
+background-attachment:inherit;
+background: url('create.jpg');
+
+/*	background: url('http://wallsdesk.com/wp-content/uploads/2016/08/Black-Abstract-HD-Wallpaper.jpg');*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+          background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-container form,
+section,
+.playlist {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form,
+.playlist {
+	width: 50%;
+	padding: 0 50px;
+}
+
+.form img {
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+}
+
+.form p {
+	color: grey;
+	font-size: 12px;
+}
+
+.main-container input {
+	background: rgba(255,255,255,0.2);
+	height: 50px;
+	border: 1px solid white;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.main-container input[type="search"] {
+    
+	padding: 0 10px 0 10px;
+	color: white;
+	flex: 1 0 200px;
+       border-top-left-radius :25px; 
+       border-bottom-left-radius: 25px;
+       
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.main-container input[type=submit] {
+	border-radius: 0px 5px 5px 0px;
+	border-left: none;
+	background: white;
+	flex: 1 0 100px;
+	box-shadow: inset 0px 0px 0px rgba(0,0,0,0.1);
+	transition: box-shadow 0.3s ease;
+        border-top-right-radius :25px; 
+       border-bottom-right-radius: 25px;
+}
+
+.main-container input[type=submit]:hover {
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);
+}
+/*
+.loader {
+    width: 10em;
+    height: 10em;
+    font-size: 25px;
+    box-sizing: border-box;
+    border-top: 0.3em solid hotpink;
+    border-radius: 50%;
+    position: relative;
+    animation: rotating 2s ease-in-out infinite;
+    --direction: 1;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    box-sizing: border-box;
+    top: -0.2em;
+}
+
+.loader::before {
+    border-top: 0.3em solid dodgerblue;
+    transform: rotate(120deg);
+}
+
+.loader::after {
+    border-top: 0.3em solid gold;
+    transform: rotate(240deg);
+}
+
+.loader span {
+    position: absolute;
+    color: white;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    line-height: 5em;
+    font-family: sans-serif;
+    animation: rotating 2s linear infinite;
+    --direction: -1;
+}
+
+@keyframes rotating {
+    50% {
+        transform: rotate(calc(180deg * var(--direction)));
+    }
+
+    100% {
+        transform: rotate(calc(360deg * var(--direction)));
+    }
+}
+
+.loader {
+	display: none;
+}
+
+.loader.show {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 5px solid rgba(255,255,255,0.6);
+	animation: load ease 3s infinite;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+*/
+p {
+  position: absolute;
+  padding-left: 280px;
+  top: 100px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+.loader.show {
+    width: 10em;
+    height: 10em;
+    font-size: 25px;
+    box-sizing: border-box;
+    border-top: 0.2em solid hotpink;
+    border-radius: 50%;
+    position: relative;
+    animation: rotating 2s ease-in-out infinite;
+    --direction: 1;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    box-sizing: border-box;
+    top: -0.2em;
+}
+
+.loader::before {
+    border-top: 0.2em solid dodgerblue;
+    transform: rotate(120deg);
+}
+
+.loader::after {
+    border-top: 0.2em solid gold;
+    transform: rotate(240deg);
+}
+
+.loader span {
+    position: absolute;
+    color: white;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    line-height: 10em;
+    font-family: sans-serif;
+    animation: rotating 2s linear infinite;
+    --direction: -1;
+}
+
+@keyframes rotating {
+    0%{
+		border-size: 5px;
+	}
+    50% {
+        transform: rotate(calc(180deg * var(--direction)));
+    }
+
+    100% {
+        transform: rotate(calc(360deg * var(--direction)));
+    }
+}
+
+/*
+@keyframes load {
+	0%{
+		border-size: 5px;
+	}
+	50% {
+		width: 20px;
+		height: 20px;
+		border-size: 1px;
+	}
+	100% {
+		border-size: 5px;
+	}
+}*/
+
+
+
+/*search box*/
+  .search-box{
+    position: absolute;
+    top:25%;
+    left:70%;
+    transform: translate(-100%,0);
+    background: #2f3640;
+    height:50px; 
+    border-radius: 40px;
+    padding:10px; 
+  }
+  
+  .search-btn{
+    color: #e84118;
+    float:right;
+    top:20%;
+     width: 100px;
+     height:30px;
+     border-radius: 40px;
+     background: #2f3640;
+     display:flex;
+     justify-content:center;
+     align-items: center;
+     transition: 0.4s;
+     
+  }
+  .search-txt{
+    align-items: center;
+    border:none;
+    background:none;
+    outline:none;
+    float: left ;
+    padding:0;
+    color:white;
+    font-size: 16px; 
+    transition:0.4s;
+    line-height: 20px;
+    width: 0px;
+  }
+  .search-box:hover > .search-txt{
+    width:240px;
+    padding:0 6px;
+  }
+  .search-box:hover > .search-btn{
+    background:#e84118;
+   color: #2f3640;
+   text-decoration:none;
+   border:none;
+   outline: none;
+  }
+  
+  /*search ends*/

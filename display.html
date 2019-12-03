@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>View Playlists</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        	<link rel="stylesheet" href="displayCss.css">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Neuton|Oswald'><link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+     
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+  <ul class="navbar-nav" style="padding: 0; font-size: 20px; background: transparent;">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html"><i class="fa fa-home"></i></a>
+    </li>
+ 
+        <li class="nav-item">
+      <a class="nav-link" href="create.html">Create</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="display.html">View </a>
+    </li>
+  
+  </ul>
+</nav>
+ 
+        <div id="wrapper">
+       <p>
+  Spice up your Life Listening 
+  <span>
+    User Playlists
+  </span>
+  &mdash; Just add user_id &mdash;
+</p>
+  <span id="controlL" class="left-controls" role="button" aria-label="See Previous Modules">
+    <b class="fa fa-chevron-left fa-chevron-left-extra" aria-hidden="true"></b>
+  </span>
+  
+  <div class="title text-center h1"></div>
+ 
+  <div class="module-section clearfix">
+<!--     <button class="btn arrow-guides fa-chevron-left"></button> -->
+   <ul class="playlist2" id="content">
+
+   </ul>
+    
+   
+    
+  </div>
+  
+<span id="controlR" class="right-controls" role="button" aria-label="See Previous Modules">
+    <b class="fa fa-chevron-right fa-chevron-right-extra" aria-hidden="true"></b>
+  </span>
+<!-- <button class="btn arrow-guides-right fa-chevron-right"></button> -->
+  
+  
+  
+</div>
+<!-- partial -->
+  <script src='https://use.fontawesome.com/76758773b6.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+        
+        
+ 
+    </body>
+        <script src="display.js"></script>
+               <script>
+            $('#controlR').click(function() {
+      event.preventDefault();
+      $('#content').animate({
+        marginLeft: "-=400px"
+      }, "fast");
+   });
+
+ $('#controlL').click(function() {
+      event.preventDefault();
+      $('#content').animate({
+        marginLeft: "+=400px"
+      }, "fast");
+ });
+
+        </script>
+
+</html>
