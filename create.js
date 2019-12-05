@@ -3,7 +3,7 @@ const app = {};
 let base_id;
 let uri_arr;
 let snap_id;
-const token = "Bearer BQAirJp2k2uEIYI0ccSwpm6if1tByBfJ6Dx7-q74L_UpprZc442a1LoMO5B4Jm5FoYhGhtirGPTyupbzeDfO3PGC1GxBfGqB4vyOocH5Ps8-ZKWbDm_SiTkhd1dVE5PZCRCbNAP4armB4HA6XvjPKMrTjv4u546IV10GfP6M8KjzCFAslgwFy2JgKQRfMQUwXd6kvtWCX0-syFi4Lk5PbT_lw3BWAcmG_ZnP701eTVQQ-wC98BS11X8NKlKvKBMa7g";
+const token = "Bearer BQCeX-D3BFgRvM3wvlX_QO2NMxOOPy0bit3YVIDV3hjIfLcmpTDL0vuOSIReCOgK9LGaJqR75DmAxx-Bx8lzvhGrCaMcHPZR3mgHyvaLAb0KYUT271vGVo2dykY7ebUlNYVaolDxIKj5uFw2dbsEFx5RXgV6YbeFd6a-4yFmfOlKlCEeBMdO-zjCnklSgOZb4NlNguXD2knM6FoZFwWuq7L6B6LularV5vVSfnAd65zbJUNJzQ2dWO4vBfmtAgvnGQ";
 app.getArists = (artist) => $.ajax({
 	url: 'https://api.spotify.com/v1/search',
 	method: 'GET',
